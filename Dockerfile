@@ -10,10 +10,8 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . .
 
-RUN cmake -B build -DCMAKE_BUILD_TYPE=Release && \
-    cmake --build build --config Release && \
-    find /app/build -type f -name "ascii-live-cpp" && \
-    ls -la /app/build/
+RUN cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXE_LINKER_FLAGS="-static" && \
+    cmake --build build
 
 # Stage 2 — runtime
 FROM scratch
