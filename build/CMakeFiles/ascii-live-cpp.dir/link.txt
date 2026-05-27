@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\ascii-live-cpp.dir/objects.a
-C:\mingw64\bin\ar.exe qc CMakeFiles\ascii-live-cpp.dir/objects.a @CMakeFiles\ascii-live-cpp.dir\objects1.rsp
-C:\mingw64\bin\c++.exe -static -Wl,--whole-archive CMakeFiles\ascii-live-cpp.dir/objects.a -Wl,--no-whole-archive -o ascii-live-cpp.exe -Wl,--out-implib,libascii-live-cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ascii-live-cpp.dir\linkLibs.rsp
