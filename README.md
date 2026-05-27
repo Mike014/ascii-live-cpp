@@ -111,6 +111,3 @@ Full build log, architecture decisions, and troubleshooting notes:
 
 ---
 
-## License
-
-MIT
